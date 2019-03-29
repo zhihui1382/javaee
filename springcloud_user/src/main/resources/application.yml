@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ticket-consumer  #服务提供者的名字
+
+server:
+  port: 5555      #访问端口号
+  
+eureka:
+  client:        #register-with-eureka默认为true
+    service-url:     #注册中心访问地址
+      defaultZone: http://localhost:1111/eureka  
+       
